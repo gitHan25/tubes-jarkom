@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="widht=device-width, initial-scale=1" />
+        <title>WEB RAFIANTO</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">Rafianto Tri A.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#skill">SKILL</a></li>
+                </ul>
+            </nav>
+            <button class="btn-cta" onclick="redirInstagram()">Follow saya</button>
+        </header>
+        <div class="container">
+            <div class="intro">
+                <p class="title">Hello, Rafianto Here</p>
+                <p class="description"> IT enthusiast</p>
+                <img src="assets/Rafianto photo 2 crop.jpg" class="img-foto"/>
+            </div>
+        </div>
+        <div class="parallax">
+            <div class="tentang">
+                <p class="description">Ini adalah website pertama saya</p>
+                <div class="mt-10">
+                    <button class="btn-cta" onclick="redirLinkedin()">KNOW ABOUT ME</button>
+                </div>
+            </div>
+            <div class="container">
+                 <div class="card" id="skill">
+                    <div class="cards-items">
+                        <p class="card-title">Saya juga memiliki keahlian dibidang editing</p>
+                        <p class="card-description">Seperti adobe software, CAPCUT dan lainnya</p>
+                    </div>
+                    <div class="cards-items">
+                        <p class="card-title">Saya adalah orang yang mudah bersosialisasi</p>
+                        <p class="card-description">Saya dapat akrab dengan orang lain dengan mudah</p>
+                    </div>
+                    <div class="cards-items">
+                        <p class="card-title">Saya pernah bekerja sebagai cashier dan admin</p>
+                        <p class="card-description">Selain menjadi cashier dan admin, saya juga pernah menjadi crew dapur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="title">THANK YOU</p>
+        </footer>
+        <script>
+            function redirInstagram(){
+                window.location.href = "https://www.instagram.com/rafianto_205"
+            }
+            function redirLinkedin(){
+                window.location.href = "https://www.linkedin.com/in/rafianto-tri-aushaf-793601278"
+            }
+        </script>
+    </body>
+</html>
