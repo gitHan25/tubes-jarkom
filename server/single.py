@@ -36,7 +36,7 @@ def handle_request(request):
 
 def server_start():
     """Fungsi untuk memulai server web."""
-    SERVER_HOST = '192.168.1.11'  # Alamat IP server
+    SERVER_HOST = '192.168.1.17'  # Alamat IP server
     SERVER_PORT = 3000            # Port server
         # Ukuran buffer untuk menerima data
 
@@ -58,6 +58,7 @@ def server_start():
 
         # Membentuk response HTTP
         response = handle_request(request_data)
+        
 
         # Mengirim response ke klien
         client_socket.sendall(response)

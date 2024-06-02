@@ -43,8 +43,8 @@ def handle_request(client_socket):
 
 def server_start():
     """Fungsi untuk memulai server web."""
-    SERVER_HOST = '192.168.1.11'  # Alamat IP server
-    SERVER_PORT = 3000            # Port server
+    SERVER_HOST = '192.168.1.17' 
+    SERVER_PORT = 3000            
 
     # Membuat server socket
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
