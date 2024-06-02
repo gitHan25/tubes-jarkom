@@ -38,7 +38,7 @@ def server_start():
     """Fungsi untuk memulai server web."""
     SERVER_HOST = '192.168.1.11'  # Alamat IP server
     SERVER_PORT = 3000            # Port server
-    BUFFER_SIZE = 1024            # Ukuran buffer untuk menerima data
+        # Ukuran buffer untuk menerima data
 
     # Membuat server socket
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -53,7 +53,7 @@ def server_start():
         print(f"Connection from {client_address}")
 
         # Menerima data request dari klien
-        request_data = client_socket.recv(BUFFER_SIZE).decode()
+        request_data = client_socket.recv(1024).decode()
         print(f"Request Data:\n{request_data}")
 
         # Membentuk response HTTP
